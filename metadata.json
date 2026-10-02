@@ -1,0 +1,6 @@
+{
+  "name": "FotoGestor Pro - Sistema para Fotógrafos",
+  "description": "Sistema completo para fotógrafos: fluxo de ensaios e casamentos, edição, clientes, controle financeiro, equipamentos e contratos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

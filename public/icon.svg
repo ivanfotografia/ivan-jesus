@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <radialGradient id="lensGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#27272a" stroke-width="8"/>
+
+  <!-- Subtle glow -->
+  <circle cx="256" cy="256" r="180" fill="url(#lensGlow)"/>
+
+  <!-- Camera Body Silhouette -->
+  <rect x="96" y="160" width="320" height="240" rx="36" fill="#27272a" stroke="#3f3f46" stroke-width="8"/>
+  
+  <!-- Flash / Pentaprism bump -->
+  <path d="M 180 160 L 210 110 L 302 110 L 332 160 Z" fill="#27272a" stroke="#3f3f46" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Viewfinder / Sensor Light -->
+  <rect x="236" y="126" width="40" height="18" rx="6" fill="url(#amberGrad)"/>
+
+  <!-- Outer Lens Ring -->
+  <circle cx="256" cy="280" r="88" fill="#18181b" stroke="url(#amberGrad)" stroke-width="12"/>
+  <circle cx="256" cy="280" r="68" fill="#09090b" stroke="#3f3f46" stroke-width="4"/>
+
+  <!-- Aperture Blades -->
+  <g fill="none" stroke="url(#amberGrad)" stroke-width="5" stroke-linecap="round">
+    <line x1="256" y1="230" x2="295" y2="250"/>
+    <line x1="295" y1="250" x2="295" y2="295"/>
+    <line x1="295" y1="295" x2="256" y2="315"/>
+    <line x1="256" y1="315" x2="217" y2="295"/>
+    <line x1="217" y1="295" x2="217" y2="250"/>
+    <line x1="217" y1="250" x2="256" y2="230"/>
+  </g>
+
+  <!-- Central Lens Reflection -->
+  <circle cx="256" cy="280" r="28" fill="#18181b"/>
+  <circle cx="246" cy="270" r="10" fill="#ffffff" fill-opacity="0.8"/>
+  <circle cx="266" cy="290" r="5" fill="#ffffff" fill-opacity="0.4"/>
+
+  <!-- Red Recording / Pro Status Indicator -->
+  <circle cx="370" cy="200" r="10" fill="#ef4444"/>
+</svg>
